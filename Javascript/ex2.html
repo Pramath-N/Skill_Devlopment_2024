@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="map"></p>
+<p id="filter"></p>
+<p id="array"></p>
+<p id="accumulator"></p>
+<button id="reduce">Reduce()</button>
+
+<script>
+    const cart=[{name:"Laptop",price:50000},{name:"Phone",price:12000},{name:"Tablet",price:8000}]
+    const newcart= cart.reduce((accumulator,item)=>accumulator+item.price,0);
+    console.log(newcart);
+</script>
+</body>
+</html>

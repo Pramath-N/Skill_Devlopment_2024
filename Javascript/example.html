@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "dis">Hello: </div>
+    <script>
+        let a1 = [1, 2, 3, 4, 5]
+        a2 = a1.map(ele => ele*ele*ele).filter(ele => ele % 2 === 0)
+
+        const dis = document.getElementById('dis');
+        const list = document.createElement('ul')
+
+        a2.forEach(element => {
+            const listEle = document.createElement('li')
+            listEle.innerHTML= `${element}`
+            list.appendChild(listEle);
+        });
+        dis.appendChild(list)
+
+        console.log(a2);
+        
+    </script>
+</body>
+</html>

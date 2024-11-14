@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(141, 155, 155);
+}
+li {
+  width: 500px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: large;
+  background-color: rgb(197, 236, 236);
+}
